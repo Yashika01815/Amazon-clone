@@ -1,0 +1,260 @@
+*{
+  margin:0;
+  /* font family means how to font looks cursive italian etc */
+  font-family: arial;
+  border:border-box;
+}
+.navbar{
+  height:60px;
+  background-color: #0F1111;
+  color:white;
+  /* display flex is given to adjust evrything in one line otherwise the new things will be adjusted in column  */
+  display:flex;
+  /* to place all elements of the navbar to the centre use align items center */
+  align-items: center;
+  /* justify content space evenly in navbar means navbar ka sara content equally distributed to jaega  */
+   justify-content: space-evenly;
+}
+.nav-logo{
+  height:50px;
+  width:100px;
+}
+/* logo will only seen when the height is to the div */
+.logo{
+  background-image: url("amazon_logo.png");
+  height:50px;
+  width:100%;
+  /* image may fit property */
+  background-size:cover;
+  background-position: center;
+}
+.border{
+  border:1.5px solid transparent;
+}
+.border:hover{
+  border:1.5px solid white;
+}
+/* for box 2 ie address */
+.add-first{
+  color:#cccccc;
+  /* font size means size of the txt and rem means the size get decrease acc to the screen */
+  font-size:0.85rem;
+  /* deliver to icon se thoda baad se likha hai meanas left se margin mila hai ..inspect */
+  margin-left: 15px;
+}
+.add-sec{
+font-size:1rem;
+margin-left:3px;
+}
+/* agr div ke element ko ek line me lana hai to display flex lagado uss div par */
+.add-icon{
+  display:flex;
+  align-items:center;
+}
+/* box 3  */
+.nav-search{
+  display:flex;
+  /* theno cheezo ko equally distribute karna hai to justify content space evently use */ 
+  background-color: yellow;
+  width:620px;
+  height:40px;
+  border-radius: 4px;
+
+}
+.search-select{
+ background-color: #f3f3f3;
+ width:50px;
+ border-top-left-radius: 4px;
+ border-bottom-left-radius: 4px;
+text-align: center;
+border:none;
+}
+.search-input{
+  /* width 100% means bacha hua area flex ka sb input search lele */
+  width:100%;
+  border:none;
+  font-size:1rem;
+}
+.search-icon{
+  /* justify content means content hirizontal ke center me aa jae aur align items means text vertica me center me aajae */
+  width: 42px;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  /* to increase the size of magnifying glass photo use font size */
+  font-size:1.2rem;
+  background-color:#febd68;
+  color:#0F1111;
+}
+/* box 4 ie aignin  */
+span{
+  font-size: 0.7rem;
+}
+.nav-second{
+  font-size: 0.85rem;
+  /* to dark the font */
+  font-weight:700;
+}
+.nav-search:hover{
+border:2px solid orange;
+}
+/* box 5 */
+/* to  change the font size of icon only use class of cart and use i*/
+.nav-cart i{
+font-size:28px;
+}
+.nav-cart{
+  font-size:0.85rem;
+  font-weight: 700;
+}
+/* panel */
+.panel{
+  height:40px;
+  background-color:#222f3d ;
+  display:flex;
+  color:white;
+  /* align items center means vertical elements center me  */
+/* justify content means horizontal alignment */
+align-items:center;
+justify-content:space-evenly;
+}
+
+.panel-options p {
+  display:inline;
+  margin-left: 10px;
+}
+.panel-options{
+  width:70%;
+  font-size:0.87rem;
+}
+/* hero section */
+.hero-section{
+  background-image: url("image.png");
+  /*background image will not be seen without height and width  */
+  height:380px;
+  /* now picture is so big that it is not visible full so applu bg size cover */
+  background-size: cover;
+  /* hero message wali line sbse top par aari thi so usko neeche le jane ke liye humne display flex dedia hero section aur fir width justify content and text align kardia jisse vo sbse neeche chala gya to neeche se margin de dia */
+  display:flex;
+  justify-content: center;
+  align-items:flex-end;
+}
+.hero-msg{
+  background-color:white;
+  color:black;
+  height:40px;
+  /* content ko center me lane ke liye align utems na djustify content use hogs jiske liye display flex */
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:0.85rem;
+width:80%;
+margin-bottom:25px;
+
+}
+.anchor{
+  color:#007185;
+}
+/* shop section */
+.box{
+  /* border:2px solid black; */
+  height:380px;
+  width:23%;
+  background-color:white;
+  padding:20px 0px 15px;
+  margin-top: 10px;
+}
+/* boxes ko ek line me laane ke liye display flex to the container of them */
+.shop-section{
+  display:flex;
+justify-content:space-evenly;
+background-color:#ffe9ec;
+flex-wrap:wrap;
+/* phle 4 boxes banao aur width 23% means ek line me 4 box hi equally aa paenge lekin agr 8 banae to ek line me 4 krne ke liye flex wrap use kro */
+}
+.img:hover{
+  box-shadow: 5px 4px 4px rgb(0, 0, 0,0.8);
+}
+.img{
+height:280px;
+background-size: cover;
+margin-top:1rem;
+margin-bottom:1rem;
+}
+.box-content{
+  margin-left:10px;
+  margin-right:10px;
+}
+.box-content p{
+  color:#007185;
+}
+/* footer */
+footer{
+  margin-top:15px;
+}
+.footer-panel1{
+  background-color: #37475a;
+  color:white;
+  height:50px;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  font-size:0.85rem;
+}
+.footer-panel2{
+  background-color: #222f3d;
+  color:white;
+  height: 320px;px;
+  display:flex;
+  justify-content: space-evenly;
+  /* saare elements neeche aa jae line se o anchor ko display block and saare un ordered list row wise set ho jae uske liye display flex */
+}
+ul{
+  margin-top:30px;
+}
+ul a{
+  /* display flex means saaree horizontal aa jae and display block means elements saare vertical ajae*/
+  display:block;
+  font-size: 0.85rem;
+  margin-top:10px;
+  color:#dddddd;
+}
+.footer-panel3{
+  background-color:#222f3d;
+  color:white;
+  border:0.1px solid rgba(255, 255, 255, 0.402);
+  height:70px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo{
+  background-image: url("amazon_logo.png");
+  height:50px;
+  width:100px;
+  background-size:cover;
+}
+.footer-panel4{
+  background-color: #0F1111;
+  color:white;
+  height:80px;
+  /* display flex use krke saare cxontent ek line me aara hai isleye individual div ko padding and text align do x */
+    
+}
+.conditions{
+  font-size:0.7rem;
+  text-align: center;
+  padding-top:25px;
+}
+.copyright{
+  font-size:0.7rem;
+  padding-top:5px;
+  /* bina flex box ke line center me aa jae */
+  text-align: center;
+}
+.a{
+  margin-right: 6px;
+}
+.iconn{
+margin-left: 550px;
+}
